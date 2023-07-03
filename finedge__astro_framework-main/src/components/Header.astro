@@ -1,0 +1,61 @@
+---
+import logo from '../images/logo.svg'
+
+import odf from '../images/odf.svg'
+---
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="/">
+       
+        <!-- <img src={logo} alt="" /> -->
+
+         <img src={odf} alt="" />
+
+         <h2 style="color: #5e96e3;">FinEdge</h2>
+        <!-- <img src="../images/Logo.jpeg" alt="" /> -->
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+  height: 70px;
+  background: var(--color-primary);
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header img {
+  height: 35px;
+  vertical-align: middle;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li {
+  padding: 0 10px;
+}
+
+.header nav ul li a {
+  color: #fff;
+}
+</style>

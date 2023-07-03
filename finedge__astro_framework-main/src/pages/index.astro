@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Features  from '../components/Features.astro';
+import Tabs from '../components/Tabs.astro';
+
+---
+<div>
+<Layout>
+	<Showcase showExtra={true}/>
+	<Features/>
+
+	<section class="page-content">
+		<div class="container">
+		  <h3>Cross-Border Payments through FinEdge</h3>
+		  <p>
+			Banks don't have to be the only place you turn to when making international transfers.
+			With FinEdge, it is easier than ever to send money across borders using innovative technology solutions.
+		  </p>
+		  <Tabs headings={['Cross-Border-Payments', 'Types', 'Benefits']} 
+		  contents={['Cross-border payment is a type of transaction that takes place between financial institutions, businesses, and individuals, where the sender and recipient are based in separate countries.', 
+		  'The two main types of cross-border payments are Wholesale cross-border payments and Retail cross-border payments.', 
+		  'Your business can greatly benefit from using cross-border payments, such as expanded customer base, control over international transactions, better exchange rates, and access to international financial services.']} />
+		  
+  <div>
+		  <h3>Why FinEdge?</h3>
+		  
+<ul>
+<li>🔵 Increased control over international transactions.</li>
+<li>🔵 Remittances are facilitated with better flows (when sending money abroad for family)</li>
+
+<li>🔵Better exchange rates management</li>
+<li>🔵Access to international financial services</li>
+</ul>
+
+		
+		</div>
+	  </section>
+
+</Layout>
+</div>
+

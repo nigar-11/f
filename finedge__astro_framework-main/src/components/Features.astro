@@ -1,0 +1,39 @@
+---
+import Card from './Card.astro';
+---
+
+<section class="features">
+    <div class="container">
+      <div class="card">
+        <h3>Who we are</h3>
+        <p>
+         FinEdge leverages technology to introduce low-cost solutions for 
+         international payments for individuals, small businesses and corporates. 
+        </p>
+      </div>
+      <div class="card">
+        <h3>What we do</h3>
+        <p>
+            We make cross-border payments super-smooth, through enhanced customer service, extensive global reach, 
+            flexible payment options, lower fees, and reduced transaction times
+        </p>
+      </div>
+      <div class="card">
+        <h3>How we do it</h3>
+        <p>
+            Each cross-border transaction consists of a set of two individual domestic transactions. Settlement between accounts/offices is done several times a month to optimise exchange rates. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .features .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 0 20px;
+  margin: 30px auto;
+}
+
+  </style>

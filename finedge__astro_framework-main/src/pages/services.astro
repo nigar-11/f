@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Card from '../components/Card.astro';
+
+// const posts = await Astro.glob('../posts/*.md');
+---
+<div>
+<Layout title="FinEdge ">
+  <Showcase heading="FinEdge Services" text="Here's a list of different services that we provide..." />
+  <section class="page-content">
+    <div class="container">
+      
+        <Card>
+          <!-- <h3>FinEdge Collect</h3> -->
+          <div>
+            <strong>FinEdge Collect</strong> is a global payment processing platform that lets you accept payments with 
+            various payment methods: credit and debit cards, bank transfers, eWallets and cash.
+        </div>
+        <br>
+        <div>
+        <strong>FinEdge Wallet</strong> is a ledger system and payments infrastructure that lets users hold and transfer funds between users wallets and sub wallets.
+    </div>
+    <br>
+        <div>
+      <strong>FinEdge Disburse</strong> is a digital platform to send local and international payouts and unlock new markets across the globe.
+      </div>
+      <br>
+      <div>
+    <strong>FinEdge Cards</strong> is for issuing physical and virtual cards around the globe.</div>
+    </div>
+    <br>
+          
+         
+        </Card>
+     
+    </div>
+  </section>
+</Layout>
+</div>
